@@ -1,0 +1,77 @@
+.duan{
+    margin: 0 auto;
+    width: 495px;
+    height: 30px;
+    margin-top: 20px;
+}
+.wenbenkuang{
+    font-size: 20px;
+    position: relative;
+    left:7px;
+    height: 30px;
+    width: 480px;
+}
+.tian-container{
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+}
+#imgPreview {
+    width: 40%;
+    height: 100%;
+    margin: 10px auto 0px auto;
+    border: 1px solid black;
+    text-align: center;
+}
+#prompt3 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+#imgSpan {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+.filepath {
+    width: 100%;
+    height: 100%;
+
+}
+#img3 {
+
+    width: 100%;
+    display: none;
+}
+#button1{
+    position: relative;
+    left: 5px;
+    border :1px solid #09aaff;
+    border-radius: 4px;
+    background-color: #09aaff;
+    font-size: 20px;
+    color: #fff;
+    height: 50px;
+    width: 100px;
+
+}
+#button2{
+    position: relative;
+    left: 285px;
+    border :1px solid #09aaff;
+    border-radius: 4px;
+    background-color: #09aaff;
+    font-size: 20px;
+    color: #fff;
+    height: 50px;
+    width: 100px;
+
+}
+.buttondiv{
+    top: 325px;
+    margin: 0 auto;
+position: relative;
+    width: 485px;
+    height: 50px;
+}

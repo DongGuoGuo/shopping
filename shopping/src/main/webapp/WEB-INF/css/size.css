@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    blr: expression(this.onFocus=this.blur())
+}
+
+/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+:focus {
+    outline: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+
+table {
+    empty-cells: show;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2, h3, h4 {
+    font-size: 14px;
+}
+
+h5, h6 {
+    font-size: 12px;
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+address, caption, cite, code, dfn, em, th, var, optgroup {
+    font-style: normal;
+    font-weight: normal
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit
+}
+
+input, button, textarea, select {
+    *font-size: 100%
+}
+
+a, img {
+    border: 0;
+}
+
+a, a:visited {
+    color: #5e5e5e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4183C4;
+    text-decoration: underline;
+}
+
+.clear {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* End hide from IE-mac */
+* + html .clearfix {
+    min-height: 1%;
+}
+
+body {
+    font: 12px/180% Arial, Lucida, Verdana, "宋体", Helvetica, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+/* shortcut */
+.shortcut {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+* html, * html body /* 修正IE6振动bug */
+{
+    background-image: url(about:blank);
+    background-attachment: fixed;
+}
+
+* html .shortcut {
+    position: absolute;
+    top: expression(eval(document.documentElement.scrollTop));
+}
+
+.shortcut {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    background: #EEEEEE;
+    text-transform: uppercase;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.shortcut h1 {
+    font-size: 14px;
+    font-family: "微软雅黑", "宋体";
+}
+
+.shortcut a, .shortcut h1 {
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    color: #333;
+    text-shadow: 0px 1px 1px #fff;
+    display: block;
+    float: left;
+}
+
+.shortcut a:hover {
+    background: #fff;
+}
+
+.shortcut span.right {
+    float: right;
+}
+
+.shortcut span.right a {
+    float: left;
+    display: block;
+    color: #ff6600;
+    font-weight: 800;
+}
+
+.headeline {
+    height: 40px;
+    overflow: hidden;
+}
+
+.adv960x90 {
+    width: 960px;
+    height: 90px;
+    overflow: hidden;
+    border: solid 1px #E6E6E6;
+    margin: 40px auto 0 auto;
+}
+
+.adv728x90 {
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    border: solid 1px #E6E6E6;
+    margin: 0 auto;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    blr: expression(this.onFocus=this.blur())
+}
+
+/*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+body {
+    background: #fff;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif, "宋体";
+    color: #333;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+* + html .clearfix {
+    height: 1%;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+/* choose */
+.choose {
+    width: 500px;
+    margin: 10px auto 0 auto;
+    border: solid 1px #ddd;
+    padding: 15px 30px 30px 30px;
+}
+
+.choosetext {
+    height: 24px;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.choosebox {
+    padding: 0 0 35px 0;
+}
+
+.choosebox li {
+    float: left;
+    margin-right: 10px;
+    display: inline;
+}
+
+.choosebox li a {
+    float: left;
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    height: 14px;
+    line-height: 14px;
+    padding: 4px 12px;
+    display: block;
+}
+.choosebox .now{
+
+}
+
+.choosebox li a.current {
+    background: url(../images/right-icon.gif) no-repeat 100% 100%;
+    border: 1px solid #A10000;
+}
+
+.choosebox li input {
+    display: none;
+}
+
+.choose .btn-img {
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    background: url(../images/gouwuche.png) no-repeat;
+    cursor: pointer;
+    border: 0;
+}
+.choose .btn-img1 {
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    background: url(../images/goumai.png) no-repeat;
+    cursor: pointer;
+    border: 0;
+}
+
+.choose .btn-img span {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    font-family: "微软雅黑", "宋体";
+    padding: 0 0 0 50px;
+    line-height: 50px;
+}

@@ -1,0 +1,68 @@
+#demoFixed {
+    position: fixed;
+    width: 100%;
+    right: 0%;
+    height: 50px;
+    opacity: 0.6;
+    background-color: red;
+    text-align: center;
+    box-shadow: 6px 10px 10px #808080;
+    border-radius: 10px 10px 10px 10px;
+    letter-spacing: 5em;
+    display: inline-block;
+    line-height: 50px;
+}
+#body{
+    width:100%;
+    height: 100%;
+}
+#uu{
+    position: relative;
+    margin: 0 auto;
+    padding:0;
+    border:1px solid #000000;
+    width: 908px;
+    height: 522px;
+    list-style-type: none;
+}
+#uu .a{
+    position: relative;
+    margin :0 auto;
+  //  border:1px solid #ff9000;
+    width: 906px;
+    height:259px;
+}
+#uu .a .hang{
+    margin: auto;
+    padding :0;
+   // border:1px solid #09aaff;
+    width:auto;
+    height:259px;
+    list-style-type: none;
+}
+#uu .a .hang .lie{
+    margin-top: 9px;
+    float:left;
+    border:1px solid green;
+    height:245px;
+    width:152px;
+    margin-left: 57px;
+}
+#uu .a .hang .lie .element{
+    margin: 0 auto;
+    border:1px solid red;
+    height: 243px;
+    width:  150px;
+}
+#uu .a .hang .lie .element .tupian{
+    height:150px;
+    width:150px;
+}
+#uu.a .hang .lie .element .wenzi{
+    height: 93px;
+    width: 150px;
+}
+#uu .a .hang .lie .element .tupian .tu{
+    height: 100%;
+    width: 100%;
+}

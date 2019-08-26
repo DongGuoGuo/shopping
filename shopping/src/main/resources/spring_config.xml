@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <!-- 开启注解扫描 -->
+    <context:component-scan base-package="mycom.shopping">
+        <!-- 配置哪些注解不扫描 -->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:exclude-filter>
+    </context:component-scan>
+
+    <!-- spring整合mybatis框架-->
+    <!-- 配置连接池 -->
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/shopping?characterEncoding=utf-8"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="12345678"></property>
+    </bean>
+
+
+    <!-- 配置SqlSessionFactory工厂 -->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <bean class="com.fasterxml.jackson.databind.ObjectMapper" id="objectMapper"></bean>
+
+
+    <!-- 配置AccountDao接口包所在 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" id="mapperScannerConfigurer">
+        <property name="basePackage" value="mycom.shopping.dao"></property>
+    </bean>
+
+</beans>
